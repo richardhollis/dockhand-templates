@@ -1,0 +1,25 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Docktail",
+      "description": "Docktail with Tailscale OAuth authentication",
+      "categories": ["Networking"],
+      "repository": {
+        "url": "https://github.com/richardhollis/dockhand-templates",
+        "stackfile": "docktail/compose.yaml"
+      },
+      "env": [
+        {
+          "name": "TAILSCALE_OAUTH_CLIENT_ID",
+          "label": "Tailscale OAuth client ID"
+        },
+        {
+          "name": "TAILSCALE_OAUTH_CLIENT_SECRET",
+          "label": "Tailscale OAuth client secret"
+        }
+      ]
+    }
+  ]
+}
