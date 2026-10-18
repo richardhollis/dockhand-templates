@@ -5,8 +5,7 @@ services:
     environment:
      - TAILSCALE_OAUTH_CLIENT_ID=${TAILSCALE_OAUTH_CLIENT_ID}
      - TAILSCALE_OAUTH_CLIENT_SECRET=${TAILSCALE_OAUTH_CLIENT_SECRET}
-
-     - DEFAULT_SERVICE_TAGS=tag:container, tag:media-server
+     - DEFAULT_SERVICE_TAGS=${DEFAULT_SERVICE_TAGS}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /var/run/tailscale:/var/run/tailscale

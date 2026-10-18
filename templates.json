@@ -18,6 +18,10 @@
         {
           "name": "TAILSCALE_OAUTH_CLIENT_SECRET",
           "label": "Tailscale OAuth client secret"
+        },
+        {
+          "name": "DEFAULT_SERVICE_TAGS",
+          "label": "Tailscale OAuth service tags"
         }
       ]
     }
